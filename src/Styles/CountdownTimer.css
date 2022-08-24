@@ -1,0 +1,41 @@
+.countdown-block {
+  width: 300px;
+  height: 150px;
+  border: 2px solid;
+  background-color: aliceblue;
+  font-family: "Oswald";
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .countdown-block {
+    margin-top: 200px;
+  }
+}
+
+.countdown-timer {
+  display: flex;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countdown-item span {
+  margin-right: 5px;
+}
+
+.two-numbers {
+  width: 2ch;
+}
+
+.countdown-item-unit {
+  font-size: 12px;
+}
