@@ -1,6 +1,6 @@
 # React Offer Count Down App
 
-- This app is created with React 17 and can be install using npm install.
+- This app is created with React 17 and can be installed using npm install after downling the code.
 
 - It uses the data.json file which is inside public-> assets
 

@@ -4,6 +4,8 @@ import { getRemainingTimeUntilMsTimestamp } from "../Utils/CountdownTimerUtils";
 import CountdownUnit from "./CountdownUnit";
 import CashGift from "./CashGift";
 import OptInButton from "./OptInButton";
+import headerImage1x from "../Images/top_image_scale_1x.png";
+import headerImage2x from "../Images/top_image_scale_2x.png";
 
 const defaultRemainingTime = {
   seconds: "00",
@@ -30,15 +32,24 @@ const CountdownTimer = ({ countdownTimestampMs, offer }) => {
   return (
     <>
       <div className="countdown-block">
-        <CashGift offerValid={remainingTime.offerValid} cashGift={offer.cash} />
-        <div className="countdown-timer">
-          <CountdownUnit unit={remainingTime.hours} label="Hours" />
-          <span>:</span>
-          <CountdownUnit unit={remainingTime.minutes} label="Minutes" />
-          <span>:</span>
-          <CountdownUnit unit={remainingTime.seconds} label="Seconds" />
+        <img
+          src={headerImage1x}
+          srcset={`${headerImage1x}, ${headerImage2x} 2x`}
+        />
+        <div className="countdown-hero">
+          <CashGift
+            offerValid={remainingTime.offerValid}
+            cashGift={offer.cash}
+          />
+          <div className="countdown-timer">
+            <CountdownUnit unit={remainingTime.hours} label="Hours" />
+            <span>:</span>
+            <CountdownUnit unit={remainingTime.minutes} label="Minutes" />
+            <span>:</span>
+            <CountdownUnit unit={remainingTime.seconds} label="Seconds" />
+          </div>
+          <OptInButton offerValid={remainingTime.offerValid} url={offer.url} />
         </div>
-        <OptInButton offerValid={remainingTime.offerValid} url={offer.url} />
       </div>
     </>
   );

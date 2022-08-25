@@ -8,30 +8,31 @@
   align-items: center;
   justify-content: space-evenly;
   font-family: "Open Sans";
-  background-repeat: no-repeat;
-  background-image: url("./Images/background_scale_1x.jpeg");
-  background-size: cover;
+
+  /* background-size: cover; */
 }
 
-@media (min-width: 666px) {
+/* @media (min-width: 666px) {
   .App {
     background-image: url("./Images/background_scale_2x.jpeg");
   }
-}
+} */
 
 .header-image {
   height: 100%;
   max-height: 180px;
   width: 100%;
   top: 0;
-  background-image: url("./Images/top_image_scale_1x.png");
+
+  background-repeat: no-repeat;
+  /* background-image: url("./Images/top_image_scale_1x.png"); */
   position: absolute;
-  background-repeat: cover;
+  background-size: cover;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .header-image {
     background-image: url("./Images/top_image_scale_2x.png");
     max-height: 370px;
   }
-}
+} */
