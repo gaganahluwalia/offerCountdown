@@ -32,11 +32,14 @@ const CountdownTimer = ({ countdownTimestampMs, offer }) => {
   return (
     <>
       <div className="countdown-block">
-        <img
-          src={headerImage1x}
-          srcset={`${headerImage1x}, ${headerImage2x} 2x`}
-        />
         <div className="countdown-hero">
+          {remainingTime.offerValid && (
+            <img
+              className="countdown-timer-header_image"
+              src={headerImage1x}
+              srcset={`${headerImage1x} 1x, ${headerImage2x} 2x`}
+            />
+          )}
           <CashGift
             offerValid={remainingTime.offerValid}
             cashGift={offer.cash}
