@@ -37,7 +37,8 @@ const CountdownTimer = ({ countdownTimestampMs, offer }) => {
             <img
               className="countdown-timer-header_image"
               src={headerImage1x}
-              srcset={`${headerImage1x} 1x, ${headerImage2x} 2x`}
+              srcSet={`${headerImage1x} 1x, ${headerImage2x} 2x`}
+              alt="headerImage"
             />
           )}
           <CashGift
