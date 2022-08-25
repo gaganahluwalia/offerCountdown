@@ -32,7 +32,6 @@ function App() {
 
   return (
     <div className="App">
-      <div class="header-image"></div>
       <CountdownTimer
         countdownTimestampMs={countDownTimestampMs}
         offer={offer}

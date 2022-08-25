@@ -43,9 +43,9 @@ const CountdownTimer = ({ countdownTimestampMs, offer }) => {
           />
           <div className="countdown-timer">
             <CountdownUnit unit={remainingTime.hours} label="Hours" />
-            <span>:</span>
+            <span className="countdown-timer-seperater">:</span>
             <CountdownUnit unit={remainingTime.minutes} label="Minutes" />
-            <span>:</span>
+            <span className="countdown-timer-seperater">:</span>
             <CountdownUnit unit={remainingTime.seconds} label="Seconds" />
           </div>
           <OptInButton offerValid={remainingTime.offerValid} url={offer.url} />
